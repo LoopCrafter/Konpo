@@ -1,0 +1,19 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .aprin-path {
+            fill: none;
+            stroke: #1E90FF;
+            stroke-width: 5;
+        }
+    </style>
+    <!-- A -->
+    <path d="M20 60 L30 20 L40 60 M25 45 H35" class="aprin-path" />
+    <!-- P -->
+    <path d="M50 60 L50 20 L60 20 L60 40 L50 40" class="aprin-path" />
+    <!-- R -->
+    <path d="M80 60 L80 20 L90 20 L90 40 L80 40 L90 60" class="aprin-path" />
+    <!-- I -->
+    <path d="M110 60 L110 20" class="aprin-path" />
+    <!-- N -->
+    <path d="M140 60 L140 20 L150 60" class="aprin-path" />
+</svg>
