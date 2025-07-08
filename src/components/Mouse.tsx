@@ -7,7 +7,7 @@ import { useGSAP } from "@gsap/react";
 const Mouse = () => {
   const [isHovered, setIsHovered] = useState(false);
   const { x, y } = useMousePosition();
-  const size = isHovered ? 300 : 10;
+  const size = isHovered ? 250 : 10;
 
   useGSAP(() => {
     gsap.to(".mask", {
@@ -25,13 +25,13 @@ const Mouse = () => {
         <p
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className="font-bold text-4xl text-white text-center"
+          className="font-bold text-4xl text-yellow-400 text-center"
         >
           A visual designer - with skills that haven't been replaced by A.I
         </p>
       </div>
       <div className="body">
-        <p className="font-bold text-4xl text-black text-center">
+        <p className="font-bold text-4xl text-white text-center">
           A visual designer - with skills that haven't been replaced by A.I
         </p>
       </div>
