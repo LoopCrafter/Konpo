@@ -1,221 +1,37 @@
 @import "tailwindcss";
-body {
-  font-family: "PP Neue Montreal";
-}
-:root {
-  --fg: #1f1f1f;
-  --bg: #f1efe7;
-  --loader-bg: #e0e0d8;
-  --stroke: rgba(0, 0, 0, 0.2);
-}
-@font-face {
-  font-family: "PP Neue Montreal Book";
-  font-style: normal;
-  font-weight: normal;
-  src: local("PP Neue Montreal Book"),
-    url("fonts/ppneuemontreal-book.woff") format("woff");
-}
 
-@font-face {
-  font-family: "PP Neue Montreal Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("PP Neue Montreal Italic"),
-    url("fonts/ppneuemontreal-italic.woff") format("woff");
+/* Mouse */
+.main-section {
+  height: 100vh;
 }
-
-@font-face {
-  font-family: "PP Neue Montreal";
-  font-style: normal;
-  font-weight: normal;
-  src: local("PP Neue Montreal Thin"),
-    url("fonts/ppneuemontreal-thin.woff") format("woff");
-}
-
-@font-face {
-  font-family: "PP Neue Montreal Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: local("PP Neue Montreal Medium"),
-    url("fonts/ppneuemontreal-medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "PP Neue Montreal SemiBold italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("PP Neue Montreal SemiBold italic"),
-    url("fonts/ppneuemontreal-semibolditalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "PP Neue Montreal Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("PP Neue Montreal Bold"),
-    url("fonts/ppneuemontreal-bold.woff") format("woff");
-}
-
-img {
+.mask,
+.body {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-h1 {
-  font-size: 6rem;
-  font-weight: 500;
-  letter-spacing: -0.1rem;
-  line-height: 1.1;
-}
-
-h1 {
-  font-size: 1.75rem;
-  font-weight: 500;
-  letter-spacing: -0.02rem;
-  line-height: 1.1;
-}
-a,
-p {
-  color: var(--fg);
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 550;
-  overflow: hidden;
-  line-height: 1rem;
-}
-
-.hero {
-  position: relative;
-  width: 100vw;
-  height: 100svh;
-  background-color: var(--bg);
-  overflow: hidden;
-}
-
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--loader-bg);
-  transform-origin: bottom;
-  transform: scaleY(0%);
-}
-.counter {
-  position: fixed;
-  right: 3rem;
-  bottom: 2rem;
-  display: flex;
-  height: 120px;
-  line-height: 150px;
-  font-size: 120px;
-  clip-path: polygon(0 0, 100% 0, 100% 120px, 0 120px);
-}
-
-.digit {
-  position: relative;
-  top: -15px;
-}
-
-.num1offset1 {
-  position: relative;
-  right: -30px;
-}
-.num1offset2 {
-  position: relative;
-  right: -15px;
-}
-
-.images-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.images-container .img {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  width: 20%;
-  aspect-ratio: 5/3;
-  border-radius: 0.75rem;
-  overflow: hidden;
-}
-
-.image-container .img.animate-out {
-  top: unset;
-  left: unset;
-  bottom: 1.5rem;
-  right: 1.5rem;
-}
-
-.divider {
-  background-color: var(--stroke);
-}
-
-nav {
-  position: relative;
-  width: 100vw;
-  height: 5rem;
-  padding: 1.5rem 1.5rem 1.5rem 7.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo-name a {
-  font-size: 1.5rem;
-}
-
-.nav-items,
-.links {
   display: flex;
   align-items: center;
-}
-
-.nav-items {
-  gap: 7.5rem;
-}
-
-.links {
-  gap: 0.5rem;
-}
-nav .divider {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  transform-origin: left;
-  transform: scaleX(0%);
-}
-
-.sidebar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 5rem;
-  height: 100svh;
-  padding-top: 1.5rem;
-  display: flex;
   justify-content: center;
-  align-items: flex-start;
+  color: #afa18f;
+  font-size: 64px;
+  line-height: 66px;
+  cursor: default;
 }
-.sidebar .logo {
-  width: 2rem;
-  aspect-ratio: 1;
-  transform: scale(0);
+.mask p,
+.body p {
+  width: 1000px;
+  padding: 40px;
+}
+.mask span,
+.body span {
+  color: #ec4e39;
 }
 
-.sidebar .divider {
+.mask {
+  mask-image: url("/images/mask.svg");
+  mask-repeat: no-repeat;
+  mask-size: 40px;
+  background: #2ecc71;
   position: absolute;
-  right: 0;
-  top: 0;
-  height: 100svh;
-  width: 1px;
-  transform-origin: top;
-  transform: scaleY(0%);
+  color: black;
 }
+/* Mouse */
