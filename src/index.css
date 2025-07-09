@@ -37,3 +37,23 @@ body {
   color: black;
 }
 /* Mouse */
+
+.races {
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.races h2 {
+  font-family: "Staatliches", cursive;
+  font-size: 30vw;
+  flex-shrink: 0;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  color: #e10600;
+
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}

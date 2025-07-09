@@ -1,4 +1,5 @@
-import Home from "./components/Home";
+// import Home from "./components/Home";
+import Horizontal from "./components/Horizontal";
 import Mouse from "./components/Mouse";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       {/* <Home /> */}
       <Mouse />
+      <Horizontal />
     </>
   );
 }

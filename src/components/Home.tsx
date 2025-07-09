@@ -1,3 +1,4 @@
+import "./../additional.css";
 const Home = () => {
   return (
     <div>
@@ -85,8 +86,8 @@ const Home = () => {
             A software design team specialized in branding, websites, products
             and systems from 0 → 1
           </h2>
+          <div className="divider"></div>
         </div>
-        <div className="divider"></div>
         <div className="site-info-copy">
           <p>An award-winning remote team</p>
           <p>since 2014 'til Infinity</p>
